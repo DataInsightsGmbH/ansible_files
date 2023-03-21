@@ -1,0 +1,11 @@
+---
+
+- name: Network Getting Started First Playbook Extended
+  gather_facts: true
+  hosts: all
+  tasks:
+
+  - name: 'Check if software installation tar file exists'
+    stat:
+          path: '/home/canugur/ansible/inventory'
+    register: scoopsoftexists
